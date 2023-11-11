@@ -1,5 +1,7 @@
 <?php
 
+use App\Livewire\CalculateForm;
+use App\Livewire\Records;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+
+Route::get('/', Records::class);
+Route::get('/calculate', CalculateForm::class);
