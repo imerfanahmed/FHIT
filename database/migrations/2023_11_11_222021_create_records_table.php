@@ -14,6 +14,7 @@ return new class extends Migration {
             $table->integer('expense');
             $table->integer('debts');
             $table->integer('assets');
+            $table->float('financial_health_score');
             $table->timestamps();
         });
     }

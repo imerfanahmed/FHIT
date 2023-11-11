@@ -54,7 +54,7 @@
 
     @if($columnChartModel)
         <div class="mt-4 text-center">
-            <div class="h3">Financial Health Score: {{$financialHealthScore}}%</div>
+            <div class="h3">Financial Health Score: {{number_format($financialHealthScore,2)}}%</div>
         </div>
         <div style="height: 32rem;">
             <livewire:livewire-column-chart

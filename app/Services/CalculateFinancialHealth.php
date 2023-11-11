@@ -25,9 +25,9 @@ trait CalculateFinancialHealth
 
         $normalizedScores = $this->getNormalizedScores($disposableIncome, $debtToIncomeRatio, $savingsRate, $netWorth);
 
-        return $this->financialHealthScore = number_format(collect($normalizedScores)
+        return $this->financialHealthScore = collect($normalizedScores)
             ->map(fn($score, $metric) => $score * $weights[$metric])
-            ->sum(),2);
+            ->sum();
 
     }
 

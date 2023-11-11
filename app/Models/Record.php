@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Record extends Model
 {
-    use HasFactory, CalculateFinancialHealth;
+    use HasFactory;
 
     protected $fillable = [
         'business_name',
@@ -16,10 +16,6 @@ class Record extends Model
         'expense',
         'debts',
         'assets',
+        'financial_health_score'
     ];
-
-    public function getFinancialHealthScoreAttribute(): string
-    {
-        return $this->getCalc($this->income, $this->expense, $this->debts, $this->assets);
-    }
 }

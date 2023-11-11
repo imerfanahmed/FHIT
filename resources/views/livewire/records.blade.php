@@ -24,7 +24,7 @@
                 <td>{{$record->expense}}</td>
                 <td>{{$record->debts}}</td>
                 <td>{{$record->assets}}</td>
-                <td>{{$record->FinancialHealthScore}}</td>
+                <td>{{$record->financial_health_score}}</td>
             </tr>
         @endforeach
 
