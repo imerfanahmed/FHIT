@@ -19,5 +19,6 @@ use Illuminate\Support\Facades\Route;
 //    return view('welcome');
 //});
 
-Route::get('/', Records::class);
-Route::get('/calculate', CalculateForm::class);
+Route::get('/', CalculateForm::class)->name('home');
+Route::get('/records', Records::class)->name('records');
+

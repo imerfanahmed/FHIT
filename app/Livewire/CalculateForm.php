@@ -4,6 +4,7 @@ namespace App\Livewire;
 
 use App\Services\CalculateFinancialHealth;
 use Livewire\Component;
+use App\Models\Record;
 
 class CalculateForm extends Component
 {
@@ -18,6 +19,14 @@ class CalculateForm extends Component
     public function calculateFinancialHealth()
     {
         $this->getCalc($this->monthly_income, $this->monthly_expenses, $this->debts, $this->assets);
+        //saving into database using orm
+        Record::create([
+            'business_name' => $this->business_name,
+            'income' => $this->monthly_income,
+            'expense' => $this->monthly_expenses,
+            'debts' => $this->debts,
+            'assets' => $this->assets
+        ]);
     }
 
     public function render()

@@ -1,5 +1,9 @@
 <div>
-    <h1 class="mb-4">Financial Health Calculator</h1>
+    <div class="d-flex justify-content-between align-items-center">
+        <h1 class="mt-4">Financial Health Calculator</h1>
+        <a wire:navigate href="{{route('records')}}" class="btn btn-primary">Records</a>
+    </div>
+
 
     <form wire:submit.prevent="calculateFinancialHealth" id="financialForm">
 
@@ -39,7 +43,13 @@
                 </div>
             </div>
         </div>
-        <button type="submit" class="btn btn-primary">Calculate</button>
+        <button type="submit" class="btn btn-primary">Calculate
+            <div wire:loading>
+                <div class="spinner-grow spinner-grow-sm" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </button>
     </form>
 
     @if($columnChartModel)
