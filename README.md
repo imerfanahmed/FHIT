@@ -1,66 +1,126 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Certainly! Let's incorporate the additional information into the documentation:
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# Financial Health Indicator Tool Documentation
 
-## About Laravel
+## Table of Contents
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Tech Stack](#tech-stack)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [Architecture](#architecture)
+7. [Security](#security)
+8. [Data Visualization](#data-visualization)
+9. [Database Integration](#database-integration)
+10. [Testing](#testing)
+11. [User-Centric Focus](#user-centric-focus)
+12. [Documentation](#documentation)
+13. [Deployment](#deployment)
+14. [Contributing](#contributing)
+15. [License](#license)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Introduction
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+The Financial Health Indicator Tool, following an MVC (Model-View-Controller) and Service-Driven Architecture, is designed to assist small businesses in understanding and improving their financial health. This tool provides a comprehensive Financial Health Score by analyzing monthly income, expenses, debts, and assets. This documentation serves as a guide on setting up, using, and understanding the different aspects of the tool.
 
-## Learning Laravel
+## Features
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+1. **Financial Health Score Calculator:** Allows businesses to input monthly income, expenses, debts, and assets, and provides a clear Financial Health Score.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+2. **Engaging and Intuitive Interface:** Developed with Livewire and Laravel for a smooth and engaging user experience.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+3. **Robust Back-End System:** Utilizes Laravel's MVC architecture and a service-driven approach for flexibility and a robust back-end.
 
-## Laravel Sponsors
+4. **Responsive Data Visualization:** Integrates Apex Charts for visual representation of the Financial Health Score and key metrics.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+5. **Database Integration:** Efficiently handles data using Laravel's Eloquent ORM with MySQL/PostgreSQL for secure storage.
 
-### Premium Partners
+6. **Security Measures:** Encrypts all sensitive financial information before saving it into the database.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+7. **Testing for Reliability:** Conducts tests using Pest to ensure the tool's functionality and reliability.
+
+## Tech Stack
+
+- Back-End: Laravel (MVC, Service-Driven)
+- Front-End: Livewire
+- Database: MySQL/PostgreSQL
+- Data Visualization: Apex Charts
+- Testing: Pest
+- Deployment: Laravel Forge, Heroku, etc.
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone [repository-url]
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd financial-health-tool
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   composer install
+   ```
+
+4. Set up the database and configure the `.env` file.
+
+   ```bash
+   php artisan migrate
+   ```
+
+## Usage
+
+1. Start the Laravel development server:
+
+   ```bash
+   php artisan serve
+   ```
+
+2. Open your browser and go to [http://localhost:8000](http://localhost:8000) to access the Financial Health Indicator Tool.
+
+## Architecture
+
+The tool follows a Laravel-based architecture with MVC and a service-driven approach for flexibility and a robust back-end. Detailed architecture information can be found in the [Architecture Documentation](docs/architecture.md).
+
+## Security
+
+The tool ensures security by encrypting all sensitive financial information before saving it into the database. Refer to the [Security Documentation](docs/security.md) for more details.
+
+## Data Visualization
+
+Visual representation of the Financial Health Score and key metrics is achieved through Apex Charts. Learn more in the [Data Visualization Documentation](docs/data-visualization.md).
+
+## Database Integration
+
+Efficient data handling is ensured through the integration of Laravel's Eloquent ORM with [MySQL/PostgreSQL]. See the [Database Integration Documentation](docs/database-integration.md) for configuration details.
+
+## Testing
+
+Both automated and manual tests are conducted using Pest to ensure the tool's reliability. Refer to the [Testing Documentation](docs/testing.md) for test details and instructions.
+
+## User-Centric Focus
+
+The tool is designed with small business owners in mind, aiming for ease of use and understanding. Feedback and suggestions are welcomed for continuous improvement.
+
+## Documentation
+
+For more detailed information on various aspects of the Financial Health Indicator Tool, refer to the [Documentation Folder](docs).
+
+## Deployment
+
+The tool can be deployed on platforms like Laravel Forge, Heroku, etc., for public access. Follow the [Deployment Guide](docs/deployment.md) for step-by-step instructions.
 
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Contributions are welcome! Please follow the [Contribution Guidelines](CONTRIBUTING.md) for details on how to contribute to this project.
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the code as per the license terms.
