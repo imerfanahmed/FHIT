@@ -3,12 +3,13 @@
 namespace App\Services;
 
 use Asantibanez\LivewireCharts\Models\ColumnChartModel;
-use Asantibanez\LivewireCharts\Models\PieChartModel;
 
 trait CalculateFinancialHealth
 {
     public float $financialHealthScore;
+
     public array $normalizedScores;
+
     public function getCalc($monthly_income, $monthly_expenses, $debts, $assets)
     {
         $disposableIncome = $monthly_income - $monthly_expenses;
@@ -26,18 +27,18 @@ trait CalculateFinancialHealth
         $normalizedScores = $this->getNormalizedScores($disposableIncome, $debtToIncomeRatio, $savingsRate, $netWorth);
 
         return $this->financialHealthScore = collect($normalizedScores)
-            ->map(fn($score, $metric) => $score * $weights[$metric])
+            ->map(fn ($score, $metric) => $score * $weights[$metric])
             ->sum();
 
     }
 
     protected function getNormalizedScores(mixed $disposableIncome, float|int $debtToIncomeRatio, float|int $savingsRate, mixed $netWorth): array
     {
-       return $this->normalizedScores = [
-            'disposable_income' => number_format(min(100, max(0, ($disposableIncome / max($this->monthly_income, 1)) * 100)),2) ,
-            'debt_to_income_ratio' => number_format(min(100, max(0, 100 - $debtToIncomeRatio)),2),
-            'savings_rate' => number_format(min(100, max(0, $savingsRate)),2) ,
-            'net_worth' => number_format(min(100, max(0, ($netWorth / max($this->assets, 1)) * 100)),2),
+        return $this->normalizedScores = [
+            'disposable_income' => number_format(min(100, max(0, ($disposableIncome / max($this->monthly_income, 1)) * 100)), 2),
+            'debt_to_income_ratio' => number_format(min(100, max(0, 100 - $debtToIncomeRatio)), 2),
+            'savings_rate' => number_format(min(100, max(0, $savingsRate)), 2),
+            'net_worth' => number_format(min(100, max(0, ($netWorth / max($this->assets, 1)) * 100)), 2),
         ];
     }
 

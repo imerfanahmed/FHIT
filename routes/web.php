@@ -21,4 +21,3 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', CalculateForm::class)->name('home');
 Route::get('/records', Records::class)->name('records');
-

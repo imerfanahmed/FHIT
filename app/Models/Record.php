@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-use App\Services\CalculateFinancialHealth;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -16,6 +15,6 @@ class Record extends Model
         'expense',
         'debts',
         'assets',
-        'financial_health_score'
+        'financial_health_score',
     ];
 }
