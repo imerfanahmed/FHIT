@@ -84,7 +84,6 @@ class Record extends Model
         $this->attributes['debts'] = encrypt($value);
     }
 
-
     public function getDebtsAttribute($value)
     {
         return decrypt($value);
@@ -100,7 +99,6 @@ class Record extends Model
         return decrypt($value);
     }
 
-
     public function setFinancialHealthScoreAttribute($value)
     {
         $this->attributes['financial_health_score'] = encrypt($value);
@@ -110,6 +108,4 @@ class Record extends Model
     {
         return decrypt($value);
     }
-
-
 }
