@@ -1,5 +1,3 @@
-Certainly! Let's incorporate the additional information into the documentation:
-
 # Financial Health Indicator Tool Documentation
 [![wakatime](https://wakatime.com/badge/github/imerfanahmed/FHIT.svg)](https://wakatime.com/badge/github/imerfanahmed/FHIT)
 ### Live Demo: http://fhit.2rgmd3tj7e-ez94degjq3mr.p.temp-site.link/
