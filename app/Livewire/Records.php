@@ -4,18 +4,19 @@ namespace App\Livewire;
 
 use App\Models\Record;
 use Livewire\Component;
+use Livewire\WithPagination;
 
 class Records extends Component
 {
-    public $records;
+    use WithPagination;
 
-    public function mount(): void
-    {
-        $this->records = Record::all();
-    }
+    protected $paginationTheme = 'bootstrap';
 
     public function render()
     {
-        return view('livewire.records');
+        return view('livewire.records',
+            [
+                'records' => Record::orderBy('created_at', 'desc')->paginate(10),
+            ]);
     }
 }

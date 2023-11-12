@@ -11,11 +11,11 @@ return new class extends Migration
         Schema::create('records', function (Blueprint $table) {
             $table->id();
             $table->string('business_name');
-            $table->integer('income');
-            $table->integer('expense');
-            $table->integer('debts');
-            $table->integer('assets');
-            $table->float('financial_health_score');
+            $table->string('income');
+            $table->string('expense');
+            $table->string('debts');
+            $table->string('assets');
+            $table->string('financial_health_score');
             $table->timestamps();
         });
     }
