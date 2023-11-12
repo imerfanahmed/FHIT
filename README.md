@@ -1,6 +1,8 @@
 Certainly! Let's incorporate the additional information into the documentation:
 
 # Financial Health Indicator Tool Documentation
+[![wakatime](https://wakatime.com/badge/github/imerfanahmed/FHIT.svg)](https://wakatime.com/badge/github/imerfanahmed/FHIT)
+### Live Demo: http://fhit.2rgmd3tj7e-ez94degjq3mr.p.temp-site.link/
 
 ## Table of Contents
 
@@ -47,20 +49,20 @@ The Financial Health Indicator Tool, following an MVC (Model-View-Controller) an
 - Database: MySQL/PostgreSQL
 - Data Visualization: Apex Charts
 - Testing: Pest
-- Deployment: Laravel Forge, Heroku, etc.
+- Deployment: RunCloud, VPS, WebHook, deployer script.
 
 ## Installation
 
 1. Clone the repository:
 
    ```bash
-   git clone [repository-url]
+   git clone https://github.com/imerfanahmed/FHIT
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd financial-health-tool
+   cd fhit
    ```
 
 3. Install dependencies:
