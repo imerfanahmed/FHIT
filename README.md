@@ -2,7 +2,7 @@
 
 #### Project Reporting on WakaTime
 [![wakatime](https://wakatime.com/badge/github/imerfanahmed/FHIT.svg)](https://wakatime.com/@89c419a1-3bb1-46a3-bee6-d704d49edbbc/projects/xfwvzgwtan?start=2023-11-07&end=2023-11-13)
-### Live Demo: http://fhit.2rgmd3tj7e-ez94degjq3mr.p.temp-site.link/
+### Live Demo: https://fhit.imerfan.com
 
 ![Demo](./docs/demo.png)
 
