@@ -123,7 +123,10 @@ The tool is designed with small business owners in mind, aiming for ease of use 
 
 The tool can be deployed on platforms like Laravel Forge, Heroku, etc., for public access. 
 I have deployed here using RunCloud Server Manager, VPS From UpCloud, WebHook, and deployer script.
+Project is Dockerized as well.
 ![Deployment](./docs/server.png)
+
+
 
 
 ## License
