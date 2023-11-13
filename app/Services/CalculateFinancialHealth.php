@@ -3,7 +3,6 @@
 namespace App\Services;
 
 use Asantibanez\LivewireCharts\Models\ColumnChartModel;
-use Asantibanez\LivewireCharts\Models\RadarChartModel;
 
 trait CalculateFinancialHealth
 {

@@ -43,10 +43,9 @@ class CalculateForm extends Component
         //        $this->resetFields();
         $this->alert('success', 'Financial Health Score Calculated and stored Successfully!');
 
-//        reset fields
+        //        reset fields
         $this->reset(['business_name', 'monthly_income', 'monthly_expenses', 'debts', 'assets']);
     }
-
 
     public function resetFields(): void
     {
