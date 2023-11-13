@@ -2,6 +2,8 @@
 [![wakatime](https://wakatime.com/badge/github/imerfanahmed/FHIT.svg)](https://wakatime.com/badge/github/imerfanahmed/FHIT)
 ### Live Demo: http://fhit.2rgmd3tj7e-ez94degjq3mr.p.temp-site.link/
 
+![Demo](./docs/demo.png)
+
 ## Table of Contents
 
 1. [Introduction](#introduction)
@@ -87,40 +89,41 @@ The Financial Health Indicator Tool, following an MVC (Model-View-Controller) an
 
 ## Architecture
 
-The tool follows a Laravel-based architecture with MVC and a service-driven approach for flexibility and a robust back-end. Detailed architecture information can be found in the [Architecture Documentation](docs/architecture.md).
+The tool follows a Laravel-based architecture with MVC and a service-driven
+approach for flexibility and a robust back-end.
 
 ## Security
 
-The tool ensures security by encrypting all sensitive financial information before saving it into the database. Refer to the [Security Documentation](docs/security.md) for more details.
+The tool ensures security by encrypting all sensitive financial information before saving it into the database.
+![Database](./docs/db.png)
 
 ## Data Visualization
 
-Visual representation of the Financial Health Score and key metrics is achieved through Apex Charts. Learn more in the [Data Visualization Documentation](docs/data-visualization.md).
+Visual representation of the Financial Health Score and key metrics is achieved through Apex Charts.
+
+![Chart](./docs/chart.png)
 
 ## Database Integration
 
-Efficient data handling is ensured through the integration of Laravel's Eloquent ORM with [MySQL/PostgreSQL]. See the [Database Integration Documentation](docs/database-integration.md) for configuration details.
+Efficient data handling is ensured through the integration of Laravel's Eloquent ORM with [MySQL/PostgreSQL]. 
+
 
 ## Testing
 
-Both automated and manual tests are conducted using Pest to ensure the tool's reliability. Refer to the [Testing Documentation](docs/testing.md) for test details and instructions.
-
+Both automated and manual tests are conducted using PHPUnit to ensure the tool's reliability.
+!![Test](./docs/testing.png)
 ## User-Centric Focus
 
 The tool is designed with small business owners in mind, aiming for ease of use and understanding. Feedback and suggestions are welcomed for continuous improvement.
 
-## Documentation
-
-For more detailed information on various aspects of the Financial Health Indicator Tool, refer to the [Documentation Folder](docs).
 
 ## Deployment
 
-The tool can be deployed on platforms like Laravel Forge, Heroku, etc., for public access. Follow the [Deployment Guide](docs/deployment.md) for step-by-step instructions.
+The tool can be deployed on platforms like Laravel Forge, Heroku, etc., for public access. 
+I have deployed here using RunCloud Server Manager, VPS From UpCloud, WebHook, and deployer script.
+![Deployment](./docs/server.png)
 
-## Contributing
-
-Contributions are welcome! Please follow the [Contribution Guidelines](CONTRIBUTING.md) for details on how to contribute to this project.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the code as per the license terms.
+This project is licensed under the [MIT License](LICENSE).
